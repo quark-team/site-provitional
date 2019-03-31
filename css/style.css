@@ -977,13 +977,14 @@ html {
 }
 .single-feature h3 {
     font-weight: 900;
-    font-size: 17px;
+    font-size: 20px;
     margin-bottom: 15px;
     letter-spacing: 0.5px;
 }
 .single-feature p {
     max-width: 75%;
     margin-bottom: 0;
+    opacity: .8;
 }
 /*=== About ===*/
 .about-us {
