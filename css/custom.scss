@@ -1,0 +1,38 @@
+/*
+|--------------------------------------------------------------------------|
+|                     Place your custom styles here                        |
+|--------------------------------------------------------------------------|
+*/
+.portfolio-wrap.section {
+    
+
+    .portfolio-item {
+        background-color: #FFF;
+        [data-icon] {
+            font-size: 100px;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+
+            &:before {
+                display: block;
+                margin: auto;
+                padding-top: 33%;
+                margin-top: -0.33em;
+                color: black;
+            }
+        }
+    }
+
+    img {
+        visibility: hidden;
+        opacity: 0;
+    }
+    .item-inner .hover-text {
+        background-color: black;
+        h4 {
+            text-align: center;
+        }
+    }
+}

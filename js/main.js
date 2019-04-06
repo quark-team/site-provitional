@@ -58,7 +58,7 @@
 	    smoothScrollSetup();
 	    accordianSetup();
 	    portfolioMsSetup();
-	    magnificPopupSetup();
+	    /* magnificPopupSetup(); */
 	    counterUp();
         contactForm();
         $(".player").YTPlayer();
@@ -289,7 +289,7 @@
     11. Magnific Popup
   --------------------------------------------------------------*/
 
-  	function magnificPopupSetup() {
+/*   	function magnificPopupSetup() {
 
 	    $('.zoom-gallery').magnificPopup({
 	        delegate: 'a',
@@ -310,7 +310,7 @@
 	        
 	    });
 	    
-  	}
+  	} */
 
 
   /*--------------------------------------------------------------
