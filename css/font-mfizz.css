@@ -325,3 +325,5 @@
 .icon-ionic:before { content: "\e900"; }
 .icon-vuejs:before { content: "\e901"; }
 .icon-swift:before { content: "\e902"; }
+.icon-scrum:before { content: "SCRUM"; font-family: 'Titillium Web', sans-serif; text-align: center; font-size: 40px !important;}
+

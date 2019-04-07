@@ -5,12 +5,12 @@
 */
 .portfolio-wrap.section .portfolio-item {
   background-color: #FFF; }
-  .portfolio-wrap.section .portfolio-item [data-icon], .portfolio-wrap.section .portfolio-item .fab {
+  .portfolio-wrap.section .portfolio-item [data-icon], .portfolio-wrap.section .portfolio-item .fab, .portfolio-wrap.section .portfolio-item .fas {
     position: absolute;
     text-align: center;
     width: 100%;
     height: 100%; }
-    .portfolio-wrap.section .portfolio-item [data-icon]:before, .portfolio-wrap.section .portfolio-item .fab:before {
+    .portfolio-wrap.section .portfolio-item [data-icon]:before, .portfolio-wrap.section .portfolio-item .fab:before, .portfolio-wrap.section .portfolio-item .fas:before {
       font-size: 100px;
       display: block;
       margin: auto;
