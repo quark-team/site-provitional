@@ -1641,6 +1641,13 @@ html {
 .contact-form {
     margin-bottom: 30px;
 }
+.google-recaptcha-container {
+    text-align: center;
+    margin-bottom: 13px;
+}
+.google-recaptcha-container .google-recaptcha { 
+    display: inline-block;
+}
 .submit-btn {
     width: 100%;
     text-transform: uppercase;
