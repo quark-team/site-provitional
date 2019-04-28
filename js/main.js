@@ -340,7 +340,7 @@
                 var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
                 
                 if (!regex.test(email)) {
-                    $('.cf-msg').fadeIn().html('<div class="alert alert-danger"><strong>Warning!</strong> Please Enter Valied Email.</div>');
+                    $('.cf-msg').fadeIn().html('<div class="alert alert-danger"><strong>Alerta!</strong> Por favor introduzca un correo electrónico válido.</div>');
                     return false;
                 }
 
@@ -359,14 +359,20 @@
                             $('#email').val('');
                             $('#msg').val('');
 
-                            $('.cf-msg').fadeIn().html('<div class="alert alert-success"><strong>Success!</strong> Email has been sent successfully.</div>');
+                            $('.cf-msg').fadeIn().html('<div class="alert alert-success"><strong>Éxito!</strong> El correo eléctronico se ha enviado exitosamente.</div>');
+                            setTimeout(function() {
+                                $('.cf-msg').fadeOut('slow');
+                            }, 4000);
+                        },
+                        error: function() {
+                            $('.cf-msg').fadeIn().html('<div class="alert alert-danger"><strong>Error!</strong> No fue posible enviar el correo eléctronico.</div>');
                             setTimeout(function() {
                                 $('.cf-msg').fadeOut('slow');
                             }, 4000);
                         }
                     });
                 } else {
-                    $('.cf-msg').fadeIn().html('<div class="alert alert-danger"><strong>Warning!</strong> All fields are required.</div>');
+                    $('.cf-msg').fadeIn().html('<div class="alert alert-danger"><strong>Alerta!</strong> Todos los campos son requeridos.</div>');
                 }
                 return false;
             });

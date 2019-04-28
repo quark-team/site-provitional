@@ -41,6 +41,13 @@
     <link rel="stylesheet" href="css/custom.css">
     <!-- Modernizr -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <!-- <script type="text/javascript">
+        var onloadCallback = function() {
+          grecaptcha.render('google_recaptcha', {
+            'sitekey' : '6LdirKAUAAAAAIdgLkdGjm9JietAHGePU-79dKdA'
+          });
+        };
+    </script> -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -605,18 +612,19 @@
                         <div class="single-info">
                             <i class="icofont icofont-clock-time"></i>
                             <h3>Horario</h3>
-                            <p> De vunes a viernes 10:00h - 19:00h</p>
+                            <p> De lunes a viernes 10:00h - 19:00h</p>
                         </div><!-- .single-info -->
                     </div>
                 </div><!-- .col -->
                 <div class="col-sm-8">
                     <div class="cf-msg"></div>
                     <form action="mail.php" class="contact-form" method="post" id="cf">
-                        <input type="text" placeholder="Name" id="name" name="name">
-                        <input type="email" placeholder="Email" id="email" name="email">
-                        <textarea cols="30" rows="10" placeholder="Message" name="msg" id="msg"></textarea>
+                        <input type="text" placeholder="Nombre" id="name" name="name">
+                        <input type="email" placeholder="Apellido" id="email" name="email">
+                        <textarea cols="30" rows="10" placeholder="Mensaje" name="msg" id="msg"></textarea>
+                        <!-- <div id="google_recaptcha"></div> -->
                         <button type="submit" class="t-btn submit-btn cont-submit btn-contact" id="submit"
-                            name="submit">Send</button>
+                            name="submit">Enviar</button>
                     </form>
                 </div><!-- .col -->
             </div>
@@ -651,6 +659,8 @@
     <script src="js/vendor/jquery-3.2.0.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+<!--     <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+    </script> -->
 </body>
 
 </html>
