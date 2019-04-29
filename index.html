@@ -568,11 +568,12 @@
     			</div><!-- .col -->
     			<div class="col-sm-8">
     				<div class="cf-msg"></div>
-    				<form action="mail.php" class="contact-form" method="post"  id="cf">
+    				<form action="mailer/enviaCorreo.php" class="contact-form" method="post"  id="cf">
     					<input type="text" placeholder="Name" id="name" name="name">
     					<input type="email" placeholder="Email" id="email" name="email">
     					<textarea cols="30" rows="10" placeholder="Message" name="msg" id="msg"></textarea>
-    					<button type="submit" class="t-btn submit-btn cont-submit btn-contact" id="submit" name="submit">Send</button>
+                        <div id="recaptcha" class="g-recaptcha" data-sitekey="6LfVsaAUAAAAAPZyW5TwFddU8jfAzZfqlJkEIoFH"  style="transform:scale(0.88);-webkit-transform:scale(0.88);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
+    					<button type="button" class="t-btn submit-btn cont-submit btn-contact" id="submit" name="submit">Send</button>
     				</form>
     			</div><!-- .col -->
     		</div>
@@ -605,5 +606,16 @@
 	<script src="js/vendor/jquery-3.2.0.min.js"></script>
 	<script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/enviaMail.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl=es' async defer></script>
+        <script type="text/javascript">
+          var onloadCallback = function() {
+                recaptcha = grecaptcha.render('recaptcha', {
+                  'sitekey' : '6LfVsaAUAAAAAPZyW5TwFddU8jfAzZfqlJkEIoFH', //Replace this with your Site key
+                  'theme' : 'light',
+                  'callback' : setIndSend
+                });
+          };
+        </script>        
   </body>
 </html>

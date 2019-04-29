@@ -331,7 +331,7 @@
     --------------------------------------------------------------*/
 
     function contactForm() {
-
+/*
         $('.cf-msg').hide();
             $('form#cf button#submit').on('click', function() {
                 var name = $('#name').val();
@@ -354,6 +354,7 @@
                         type: "POST",
                         url: "mail.php",
                         data: values,
+
                         success: function() {
                             $('#name').val('');
                             $('#email').val('');
@@ -370,6 +371,7 @@
                 }
                 return false;
             });
+*/
     }
 
    
