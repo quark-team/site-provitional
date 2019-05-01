@@ -105,9 +105,9 @@ function showFormMessage(message) {
 
 function resetFormValues() {
     grecaptcha.reset();
-    name.val('');
-    mail.val('');
-    mensaje.val('');
+    $('#name').val('');
+    $('#email').val('');
+    $('#msg').val('');
 }
 
 function showFormLoader() {
