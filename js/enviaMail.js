@@ -11,15 +11,15 @@ $(function () {
         var send = true;
         var msj = '';
         if (!soloLetras(name.val())) {
-            msj = '<div class="alert alert-danger"><strong>Atención!</strong> Por favor introduzca un nombre válido.</div>';
+            msj = '<div class="alert alert-danger"><strong>Atención!</strong> Por favor introduce un nombre válido.</div>';
             send = false;
         } else {
             if (!valCorreo(mail.val())) {
-                msj = '<div class="alert alert-danger"><strong>Atención!</strong> Por favor introduzca un correo electrónico válido.</div>';
+                msj = '<div class="alert alert-danger"><strong>Atención!</strong> Por favor introduce un correo electrónico válido.</div>';
                 send = false;
             } else {
                 if (!soloLetras(mensaje.val())) {
-                    msj = '<div class="alert alert-danger"><strong>Atención!</strong> Por favor introduzca un mensaje válido.</div>';
+                    msj = '<div class="alert alert-danger"><strong>Atención!</strong> Por favor introduce un mensaje válido.</div>';
                     send = false;
                 }
             }
@@ -35,13 +35,13 @@ $(function () {
                 }).done(function (r) {
                     hideFormLoader();
                     showFormMessage('<div class="alert alert-success"><strong>Éxito!</strong> El correo eléctronico se ha enviado exitosamente.</div>');
-                    resetFormValues(r);
+                    resetFormValues();
                 }).fail(function (e) {
                     hideFormLoader();
                     showFormMessage('<div class="alert alert-danger"><strong>Error!</strong> No fue posible enviar el correo eléctronico.</div>');
                 })
             } else {
-                showFormMessage('<div class="alert alert-danger"><strong>Error!</strong> No fue posible enviar el correo eléctronico.</div>');
+                showFormMessage('<div class="alert alert-danger"><strong>Atención!</strong> Por favor marca la casilla "No soy un robot".</div>');
             }
         } else {
             showFormMessage(msj);
