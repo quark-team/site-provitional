@@ -315,7 +315,7 @@ textarea {
     height: 160px;
 }
 input:focus, textarea:focus {
-    /*border-color: #E1CD1E;*/
+    /*border-color: #ff9d00;*/
 }
 h1, 
 h2, 
@@ -387,7 +387,7 @@ img {
 --------------------------------------------------------------*/
 a {
     font-size: 14px;
-    color: #FF0000;
+    color: #00d8ff;
     background-color: transparent;
 }
 a:hover, 
@@ -449,7 +449,7 @@ html {
 }
 .t-btn {
     display: inline-block;
-    background-color: #FF0000;
+    background-color: #00d8ff;
     color: #fff;
     font-weight: 400;
     font-size: 14px;
@@ -478,7 +478,7 @@ html {
 .t-btn:hover,
 .t-btn:active,
 .t-btn:focus {
-    background-color: #E1CD1E;
+    background-color: #ff9d00;
     color: #fff;
 }
 .p-l-r-0 {
@@ -515,7 +515,7 @@ html {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #FF0000;
+    background-color: #00d8ff;
     -webkit-animation: preloader-wave 1.6s linear infinite;
     animation: preloader-wave 1.6s linear infinite;
 }
@@ -555,7 +555,7 @@ html {
 --------------------------------------------------------------*/
 .scrollup {
     position: fixed;
-    background-color: rgba(255, 0, 0, 0.6);
+    background-color: #00d8ff;
     bottom: -60px;
     right: 25px;
     color: #fff;
@@ -626,14 +626,7 @@ html {
 }
 /*Site Branding*/
 .site-header .custom-logo {
-    max-width: 200px;
-    height: 80px;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-.site-header.small-height .custom-logo {
-    max-width: 180px;
-    height: 60px;
+    max-height: 46px;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
@@ -714,10 +707,10 @@ html {
     color: #fff;
 }
 .primary-nav-list .menu-item > a:hover {
-    color: #E1CD1E;
+    color: #ff9d00;
 }
 .primary-nav-list .active > a {
-    color: #FF0000;
+    color: #00d8ff;
     background-color: transparent;
 }
 .primary-nav-list .current-menu-ancestor .current-menu-ancestor.current-menu-parent > a,
@@ -970,7 +963,7 @@ html {
     padding-bottom: 0;
 }
 .single-feature i {
-    color: #FF0000;
+    color: #00d8ff;
     font-size: 30px;
     margin-bottom: 22px;
     display: block;
@@ -1056,7 +1049,7 @@ html {
     position: absolute;
     height: 6px;
     width: 6px;
-    background-color: #FF0000;
+    background-color: #00d8ff;
     border-radius: 50%;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -1127,10 +1120,10 @@ html {
     left: 0;
     top: -5px;
     font-size: 30px;
-    color: #E1CD1E;
+    color: #ff9d00;
 }
 .single-service:hover i {
-    color: #FF0000;
+    color: #00d8ff;
 }
 .single-service h3 {
     color: #fff;
@@ -1174,7 +1167,7 @@ html {
     font-size: 13px;
 }
 .portfolio-filter ul li.active a {
-    background-color: #FF0000;
+    background-color: #00d8ff;
     color: #fff;
 }
 .portfolio {
@@ -1338,7 +1331,7 @@ html {
 .testimonial blockquote:before {
     content: "\f0b1";
     font-family: 'IcoFont';
-    color: #FF0000;
+    color: #00d8ff;
     font-size: 45px;
     line-height: 45px;
     position: absolute;
@@ -1348,7 +1341,7 @@ html {
 .testimonial blockquote:after {
     content: "\f0b2";
     font-family: 'IcoFont';
-    color: #FF0000;
+    color: #00d8ff;
     font-size: 45px;
     line-height: 45px;
     position: absolute;
@@ -1376,13 +1369,13 @@ html {
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: #FF0000;
+    background-color: #00d8ff;
     margin: 4px;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 .testimonial-wrap .owl-dots .owl-dot.active span {
-    background-color: #E1CD1E;
+    background-color: #ff9d00;
 }
 /*=== Pricing ===*/
 .pricing-table.section {
@@ -1483,7 +1476,7 @@ html {
     line-height: inherit;
 }
 .entry-title a:hover {
-    color: #FF0000;
+    color: #00d8ff;
 }
 .byline .author a {
     font-weight: 400;
@@ -1495,7 +1488,7 @@ html {
     color: #191E50;
 }
 .byline .author a:hover {
-    color: #E1CD1E;
+    color: #ff9d00;
 }
 .posted-on {
     position: absolute;
@@ -1555,14 +1548,14 @@ html {
     color: #595959;
 }
 .read-more-btn:hover {
-    border: 1px solid #FF0000;
-    background-color: #FF0000;
+    border: 1px solid #00d8ff;
+    background-color: #00d8ff;
     color: #fff;
 }
 /*=== Subscribe ===*/
 .subscribe {
     height: 300px;
-    background-color: #FF0000;
+    background-color: #00d8ff;
     padding: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1613,7 +1606,7 @@ html {
 .subscribe-btn:focus {
     border-color: #fff;
     background-color: #fff;
-    color: #FF0000;
+    color: #00d8ff;
 }
 /*=== Contact ===*/
 .single-info {
@@ -1717,7 +1710,7 @@ html {
     font-size: inherit;
 }
 .breadcrumb li a:hover {
-    color: #E1CD1E;
+    color: #ff9d00;
 }
 .post-details .post-thumbnail {
     margin-bottom: 30px;
@@ -1772,8 +1765,8 @@ html {
 }
 .post-social-btn.social-btn a:hover {
     color: #fff;
-    border-color: #E1CD1E;
-    background-color: #E1CD1E;
+    border-color: #ff9d00;
+    background-color: #ff9d00;
 }
 /*Comments*/
 .comments-title, .comment-reply-title {
@@ -1834,10 +1827,10 @@ html {
     font-family: 'Titillium Web', sans-serif;
 }
 .comment-author .nm a:hover {
-    color: #E1CD1E;
+    color: #ff9d00;
 }
 .comment-author .nm:hover {
-    color: #E1CD1E;
+    color: #ff9d00;
 }
 .comment-metadata {
     line-height: 22px;
@@ -1848,7 +1841,7 @@ html {
     font-size: 14px;
 }
 .comment-metadata a:hover {
-    color: #E1CD1E;
+    color: #ff9d00;
 }
 .comment-content {
     line-height: 22px;
@@ -1862,11 +1855,11 @@ html {
 }
 .comment-reply-link {
     font-size: 14px;
-    color: #E1CD1E;
+    color: #ff9d00;
     position: relative;
 }
 .comment-reply-link:hover, .comment-reply-link:focus {
-    color: #FF0000;
+    color: #00d8ff;
 }
 .comment-reply-link:before {
     content: "\f112";
@@ -1924,7 +1917,7 @@ html {
 }
 .comment-form textarea:focus, 
 .comment-form input:focus {
-    border-color: #E1CD1E;
+    border-color: #ff9d00;
 }
 .post-navigation {
     display: -webkit-box;
@@ -2009,8 +2002,8 @@ html {
     font-size: 13px;
 }
 .social-btn a:hover {
-    border-color: #FF0000;
-    background-color: #FF0000;
+    border-color: #00d8ff;
+    background-color: #00d8ff;
 }
 /*--------------------------------------------------------------
 13. Responsive
