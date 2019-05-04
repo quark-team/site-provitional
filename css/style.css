@@ -1311,7 +1311,7 @@ html {
 }
 /*=== Testimonial ===*/
 .testimonial-wrap {
-    background-image: url(../img/testimonialbg.jpg);
+    background-image: url(../img/testimonialbgcustom.jpeg);
     background-position: center center;
     position: relative;
     background-repeat: no-repeat;
