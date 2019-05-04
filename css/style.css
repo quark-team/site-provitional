@@ -578,7 +578,7 @@ html {
     z-index: 10;
 }
 .scrollup:hover {
-    background-color: rgba(255, 0, 0, 1);
+    background-color: #ff9d00;
 }
 .scrollup:before {
     content: "\f102";
@@ -1638,11 +1638,15 @@ html {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: -28px;
-    width: calc(100% + 56px);
+    margin-left: -16px;
+    width: calc(100% + 32px);
+    overflow: hidden;
 }
 .google-recaptcha-container .google-recaptcha { 
     display: block;
+    width: 302px;
+    overflow: hidden;
+    margin: auto;
 }
 .google-recaptcha-container .google-recaptcha div:first-child{
     margin: auto;
