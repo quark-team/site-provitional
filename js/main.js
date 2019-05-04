@@ -42,7 +42,7 @@
     $(window).on('load', function () {
         $(window).trigger("scroll");
         $(window).trigger("resize");
-        //preloaderSetup();
+        preloaderSetup();
         portfolioMsSetup();
     });
 
