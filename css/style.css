@@ -1634,6 +1634,13 @@ html {
 .contact-form {
     margin-bottom: 30px;
 }
+.google-recaptcha-container {
+    text-align: center;
+    margin-bottom: 13px;
+}
+.google-recaptcha-container .google-recaptcha { 
+    display: inline-block;
+}
 .submit-btn {
     width: 100%;
     text-transform: uppercase;
@@ -2352,4 +2359,22 @@ html {
     .member-details {
         padding: 8px;
     }
+}
+
+
+/*--------------------------------------------------------------
+14. Generic Loader
+--------------------------------------------------------------*/
+#waitloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    opacity: 0.8;
+    background-size: cover;
+    height: 100%;
+    z-index: 9999999;
+    display: none;
 }
