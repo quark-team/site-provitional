@@ -42,7 +42,7 @@
     $(window).on('load', function () {
         $(window).trigger("scroll");
         $(window).trigger("resize");
-        preloaderSetup();
+        //preloaderSetup();
         portfolioMsSetup();
     });
 
@@ -160,7 +160,7 @@
 
     function scrollAnimation() {
 
-        $('a:not(".social-media")').on('click', function (event) {
+        $('a:not(".social-media, [data-filter]")').on('click', function (event) {
             var $anchor = $(this);
             $('html, body').stop().animate({
                 scrollTop: ($($anchor.attr('href')).offset().top - 69)
