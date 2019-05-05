@@ -1138,7 +1138,7 @@ html {
 }
 /*=== Portfolio ===*/
 .portfolio-wrap.section {
-    padding-bottom: 0;
+    padding-bottom: 20px;
 }
 .portfolio-filter {
     margin-bottom: 40px;
