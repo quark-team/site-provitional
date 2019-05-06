@@ -774,9 +774,9 @@
     <!-- Start Map Section  -->
     <div class="map-wrap">
         <div class="google-map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.3803046068087!2d-70.65388878466759!3d-33.43939708077707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a474b3ff6b%3A0x63dfc33f586bee7d!2sPaseo+Ahumada+312%2C+Santiago%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1555029233828!5m2!1ses!2scl"
-                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe id="maps"
+                src='//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.3803046068087!2d-70.65388878466759!3d-33.43939708077707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a474b3ff6b%3A0x63dfc33f586bee7d!2sPaseo+Ahumada+312%2C+Santiago%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1555029233828!5m2!1ses!2scl'
+                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen async defer></iframe>
         </div>
         <!-- .google-map -->
     </div>
@@ -806,8 +806,7 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script src="js/enviaMail.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl=es' async
-        defer></script>
+    <script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl=es' async defer></script>
     <script type="text/javascript">
         var onloadCallback = function () {
             recaptcha = grecaptcha.render('google_recaptcha', {
