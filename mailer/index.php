@@ -1,10 +1,14 @@
 <?php
-//error_reporting(0);
+require('../vendor/autoload.php');
 require_once 'recaptchalib.php';
 require_once 'service.php';
 
+$dotenv = Dotenv\Dotenv::create(__DIR__);
+$dotenv->load();
+
+
 // Get a key from https://www.google.com/recaptcha/admin/create
-$privatekey = "6LfVsaAUAAAAAMmoXUVzKyXS5FYcyABysxVvMCL6";
+$privatekey = getenv('RECAPCHA_KEY'); //"6LfVsaAUAAAAAMmoXUVzKyXS5FYcyABysxVvMCL6";
 
 # the response from reCAPTCHA
 $resp = null;
@@ -25,11 +29,11 @@ if ($_POST["reponse"]) {
 
             $send = true;
 
-            if(!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
+            if(!filter_var($_POST["mail"], FILTER_VALIDATE_EMAIL)){
               //$send = false;
             }
 
-            if(!filter_var($_POST["email"], FILTER_SANITIZE_EMAIL)){
+            if(!filter_var($_POST["mail"], FILTER_SANITIZE_EMAIL)){
               //$send = false;
             }
             

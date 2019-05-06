@@ -1,7 +1,6 @@
 <?php
  class Service {
 
-
     public function sendMail($data){
         
         $data_user = json_encode(array (
